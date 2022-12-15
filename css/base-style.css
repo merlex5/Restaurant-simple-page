@@ -1,0 +1,143 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+select::-ms-expand {
+  display: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+ol {
+  counter-reset: myCounter; }
+
+body {
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.35;
+  color: #656363;
+  height: 100%; }
+
+.wraper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+.container-large {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto; }
+
+h1 {
+  font-family: 'Tinos', arial;
+  font-size: 8rem;
+  line-height: 1.15;
+  font-weight: 400;
+  font-style: normal;
+  color: #d67e34; }
+
+h2 {
+  font-family: 'Tinos', arial;
+  font-size: 5.4rem;
+  line-height: 1.15;
+  font-weight: 400;
+  color: #000; }
+
+h3 {
+  font-family: 'Tinos', arial;
+  font-size: 5.2rem;
+  line-height: 1.15;
+  font-weight: 400;
+  font-style: normal;
+  color: #d67e34; }
+
+h4 {
+  font-family: 'Tinos', arial;
+  font-size: 5rem;
+  line-height: 1.15;
+  font-weight: 400;
+  font-style: normal;
+  color: #d67e34; }
+
+h5 {
+  font-family: 'Tinos', arial;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  font-weight: 400;
+  font-style: normal;
+  color: #2c2c2c; }
+
+.link-underline {
+  position: relative;
+  cursor: pointer; }
+  .link-underline::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1); }
+
+@media (hover: hover) and (pointer: fine) {
+  .link-underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%; } }
+.link-orange {
+  position: relative;
+  cursor: pointer; }
+  .link-orange::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ff7400;
+    transition: width 0.3s cubic-bezier(0.25, 1, 0.5, 1); }
+
+@media (hover: hover) and (pointer: fine) {
+  .link-orange:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%; } }
+input[type='checkbox'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); }
