@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Чтобы небыло горизонтального скролла -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base-style.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wraper">
+    <div class="restaurant__bg">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="header__logo" href="#">
+              <svg width="100" height="68" viewBox="0 0 100 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.12132" y="33.981" width="45.0566" height="45.0566" transform="rotate(-45 2.12132 33.981)" stroke="#FF7400" stroke-width="3" />
+                <rect x="34.159" y="33.981" width="45.0566" height="45.0566" transform="rotate(-45 34.159 33.981)" stroke="#FF7400" stroke-width="3" />
+              </svg>
+            </a>
+            <div class="header__info">
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item"><a class="header__nav-link link-underline" href="#">главная</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link link-underline" href="#">меню</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link link-underline" href="#">о нас</a></li>
+                  <li class="header__nav-item"><a class="header__nav-link link-underline" href="#">бронь</a></li>
+                </ul>
+              </nav>
+              <div class="header__box">
+                <a class="header__cart" href="##">
+                  <img class="header__cart-img" src="images/cart-icon.png" alt="Shopping cart">
+                </a>
+                <div class="header__contacts">
+                  <a class="header__phone-link" href="tel: +9998887654">+999-888-76-54</a>
+                  <p class="header__text">Свяжитесь с нами для бронирования</p>
+                </div>
+                <a class="header__order-link" data-text="заказ столика">заказ столика</a>
+              </div>
+
+              <div class="header__burger">
+                <input id="burger" type="checkbox" />
+                <label class="header__burger-label" for="burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+                <nav class="header__burger--nav">
+                  <ul class="header__burger--nav-list">
+                    <li><a class="header__burger--nav-link link-underline" href="##">главная</a></li>
+                    <li><a class="header__burger--nav-link link-underline" href="##">меню</a></li>
+                    <li><a class="header__burger--nav-link link-underline" href="##">о нас</a></li>
+                    <li><a class="header__burger--nav-link link-underline" href="##">бронь</a></li>
+                  </ul>
+                  <div class="header__burger--box">
+                    <div class="header__burger--contacts">
+                      <a class="header__burger--phone-link" href="tel: +9998887654">+999-888-76-54</a>
+                      <p class="header__burger--text">Свяжитесь с нами для бронирования</p>
+                    </div>
+                    <a class="header__burger--order-link" data-text="заказ столика">заказ столика</a>
+                  </div>
+                  <a class="header__burger--cart" href="##">
+                </nav>
+
+                <img class="header__burger--cart-img" src="images/cart-icon.png" alt="Shopping cart">
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="restaurant__inner">
+          <h4 class="restaurant__subtitle">Добро пожаловать в</h4>
+          <h1 class="restaurant__title">Наш ресторан</h1>
+          <p class="restaurant__desc">Дом лучшей еды</p>
+          <a class="restaurant__menu-link" href="#">viev menu</a>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <div class="benefits">
+        <div class="container">
+          <div class="benefits__inner">
+            <div class="benefits__block">
+              <img class="benefits__block-img" src="images/tray-icon.svg" alt="Tray">
+              <h5 class="benefits__block-title">Магическая <span>Атмосфера</span></h5>
+              <p class="benefits__block-desc">В нашем заведении царит магическая атмосфера наполненная вкусными ароматами</p>
+            </div>
+            <div class="benefits__block">
+              <img class="benefits__block-img" src="images/tray-icon.svg" alt="Tray">
+              <h5 class="benefits__block-title">Лучшее качество <span>Еды</span></h5>
+              <p class="benefits__block-desc">Качество нашей Еды - отменное!</p>
+            </div>
+            <div class="benefits__block">
+              <img class="benefits__block-img" src="images/tray-icon.svg" alt="Tray">
+              <h5 class="benefits__block-title">Недорогая <span>Еда</span></h5>
+              <p class="benefits__block-desc">Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="history">
+        <div class="container">
+          <div class="history__inner">
+            <div class="history__content">
+              <h2 class="history__content-title">Наша <span>История</span></h2>
+              <p class="history__content-desc">
+                Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.
+              </p>
+              <div class="history__assortment">
+                <a class="history__assortment-item" href="##"><span>93</span>Напитки</a>
+                <a class="history__assortment-item" href="##"><span>206</span>Еда</a>
+                <a class="history__assortment-item" href="##"><span>71</span>Закуски</a>
+              </div>
+            </div>
+            <div class="history__picture">
+              <div class="history__rectangle"></div>
+              <img class="history__img" src="images/history-photo-1.jpg" alt="Photo">
+              <img class="history__img" src="images/history-photo-2.jpg" alt="Photo">
+              <img class="history__img" src="images/history-photo-3.jpg" alt="Photo">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="banner__bg">
+          <div class="container">
+            <div class="banner__inner">
+              <div class="banner__info">
+                <h3 class="banner__title">Отпразднуйте в одном из самых лучших ресторанов.</h3>
+                <p class="banner__desc">Только в этом месяце бизнес-ланч от 250 ₽</p>
+              </div>
+              <a class="banner__link">заказ столика</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="food">
+        <div class="container">
+          <h2 class="food__title">Наши <span>Блюда</span></h2>
+          <div class="food__inner">
+            <div class="food__picture">
+              <img class="food__img" src="images/pizza-1.jpg" alt="Pizza">
+            </div>
+            <div class="food__price">
+              <a class="food__price-item" href="##">
+                <div class="food__price-picture">
+                  <img class="food__price-img" src="images/hamburger-1.jpg" alt="Hamburger">
+                </div>
+                <div class="food__price-content">
+                  <p class="food__price-name">Гамбургер мини</p>
+                  <p class="food__price-num"><span>220</span> ₽</p>
+                </div>
+              </a>
+              <a class="food__price-item" href="##">
+                <div class="food__price-picture">
+                  <img class="food__price-img" src="images/hamburger-1.jpg" alt="Hamburger">
+                </div>
+                <div class="food__price-content">
+                  <p class="food__price-name">Гамбургер мини</p>
+                  <p class="food__price-num"><span>220</span> ₽</p>
+                </div>
+              </a>
+              <a class="food__price-item" href="##">
+                <div class="food__price-picture">
+                  <img class="food__price-img" src="images/hamburger-1.jpg" alt="Hamburger">
+                </div>
+                <div class="food__price-content">
+                  <p class="food__price-name">Гамбургер мини</p>
+                  <p class="food__price-num"><span>220</span> ₽</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="food__separator"></div>
+        </div>
+      </section>
+      <section class="menu">
+        <div class="menu__bg">
+          <div class="container">
+            <h2 class="menu__title">Наше меню</h2>
+            <div class="menu__inner">
+              <div class="menu__card">
+                <span class="menu__sticker">recommended</span>
+                <div class="menu__wrapper">
+                  <div class="menu__picture">
+                    <img src="images/menu-food-1.jpg" alt="Burger">
+                  </div>
+                  <div class="menu__price"><span>420</span></div>
+                </div>
+                <div class="menu__desc">
+                  <h5 class="menu__desc-title">Гамбургер макси</h5>
+                  <p class="menu__desc-text">Максимально толстый слой мяса</p>
+                </div>
+                <a class="menu__link" href="##">заказать</a>
+              </div>
+              <div class="menu__card">
+                <div class="menu__wrapper">
+                  <div class="menu__picture">
+                    <img src="images/menu-food-1.jpg" alt="Burger">
+                  </div>
+                  <div class="menu__price"><span>420</span></div>
+                </div>
+                <div class="menu__desc">
+                  <h5 class="menu__desc-title">Гамбургер макси</h5>
+                  <p class="menu__desc-text">Максимально толстый слой мяса</p>
+                </div>
+                <a class="menu__link" href="##">заказать</a>
+              </div>
+              <div class="menu__card">
+                <div class="menu__wrapper">
+                  <div class="menu__picture">
+                    <img src="images/menu-food-1.jpg" alt="Burger">
+                  </div>
+                  <div class="menu__price"><span>420</span></div>
+                </div>
+                <div class="menu__desc">
+                  <h5 class="menu__desc-title">Гамбургер макси</h5>
+                  <p class="menu__desc-text">Максимально толстый слой мяса</p>
+                </div>
+                <a class="menu__link" href="##">заказать</a>
+              </div>
+              <div class="menu__card">
+                <div class="menu__wrapper">
+                  <div class="menu__picture">
+                    <img src="images/menu-food-1.jpg" alt="Burger">
+                  </div>
+                  <div class="menu__price"><span>420</span></div>
+                </div>
+                <div class="menu__desc">
+                  <h5 class="menu__desc-title">Гамбургер макси</h5>
+                  <p class="menu__desc-text">Максимально толстый слой мяса</p>
+                </div>
+                <a class="menu__link" href="##">заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="impression">
+        <div class="container">
+          <div class="impression__slider">
+            <div class="impression__slide">
+              <p class="impression__comment">
+                Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!! Отдельное спасибо за комплепент в виде фруктовой тарелки. Будем рекомендовать этот ресторан своим друзьям и родственникам также за рубежом, путешествующих в Санкт-Петербург!!!
+              </p>
+              <a class="impression__link link-orange" href="##">Подробнее</a>
+              <div class="impression__photo">
+                <img src="images/visitor-1.jpg" alt="Visitor">
+              </div>
+              <p class="impression__status">Посетитель</p>
+              <p class="impression__name">Николай</p>
+            </div>
+            <div class="impression__slide">
+              <p class="impression__comment">
+                Были на юбилее в зале на 16 гостей. Обслуживание на высоком уровне, хорошая кухня, своя парковка. В соседнем зале тоже был банкет, нисколько друг другу не мешали, прекрасная звукоизоляция.
+              </p>
+              <a class="impression__link link-orange" href="##">Подробнее</a>
+              <div class="impression__photo">
+                <img src="images/visitor-2.jpg" alt="Visitor">
+              </div>
+              <p class="impression__status">Посетитель</p>
+              <p class="impression__name">Иван</p>
+            </div>
+            <div class="impression__slide">
+              <p class="impression__comment">
+                Красивые девушки выступают. Общаются приятно и без скованности и напряжения. Неплохой выбор напитков оказался. По атмосфере соответствующий своему профилю. Мне понравилось. Друг ожидал немного другого, ему продолжения подавай, а меня вполне устраивает такой формат. Нет лишнего, реально лицезреешь красивую эротическую историю. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, eos sapiente corrupti numquam sint debitis.
+              </p>
+              <a class="impression__link link-orange" href="##">Подробнее</a>
+              <div class="impression__photo">
+                <img src="images/visitor-3.jpg" alt="Visitor">
+              </div>
+              <p class="impression__status">Посетитель</p>
+              <p class="impression__name">Сергей</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="gallery">
+        <div class="gallery__bg">
+          <div class="container">
+            <h2 class="gallery__title">Галерея <span>Блюд</span></h2>
+            <div class="gallery__inner">
+              <div class="gallery__photo">
+                <img src="images/gallery-1.jpg" alt="Table setting">
+              </div>
+              <div class="gallery__photo">
+                <img src="images/gallery-2.jpg" alt="Сoffee">
+              </div>
+              <div class="gallery__photo">
+                <img src="images/gallery-3.jpg" alt="Soup">
+              </div>
+              <div class="gallery__photo">
+                <img src="images/gallery-2.jpg" alt="Сoffee">
+              </div>
+              <div class="gallery__photo">
+                <img src="images/gallery-3.jpg" alt="Soup">
+              </div>
+              <div class="gallery__photo">
+                <img src="images/gallery-1.jpg" alt="Table setting">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cooks">
+        <div class="container">
+          <h2 class="cooks__title">Наши <span>Повара</span></h2>
+          <div class="cooks__inner">
+            <a class="cooks__cook" href="##">
+              <img src="images/cook-1.jpg" alt="Полина Нечаева">
+              <div class="cooks__info">
+                <p class="cooks__status">Шеф-повар, бренд-шеф</p>
+                <h5 class="cooks__name">Полина <span>Нечаева</span></h5>
+                <p class="cooks__experience">Стаж 11 лет</p>
+              </div>
+            </a>
+            <a class="cooks__cook" href="##">
+              <img src="images/cook-2.jpg" alt="Tommaso Tutti">
+              <div class="cooks__info">
+                <p class="cooks__status">Шеф-повар, повар</p>
+                <h5 class="cooks__name">Tommaso <span>Tutti</span></h5>
+                <p class="cooks__experience">Стаж 18 лет</p>
+              </div>
+            </a>
+            <a class="cooks__cook" href="##">
+              <img src="images/cook-3.jpg" alt="Nicolas Moreau">
+              <div class="cooks__info">
+                <p class="cooks__status">Шеф-повар</p>
+                <h5 class="cooks__name">Nicolas <span>Moreau</span></h5>
+                <p class="cooks__experience">Стаж 9 лет</p>
+              </div>
+            </a>
+          </div>
+        </div>
+  </div>
+  </section>
+  </main>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__inner">
+          <a class="footer__logo" href="#">
+            <svg width="100" height="68" viewBox="0 0 100 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.12132" y="33.981" width="45.0566" height="45.0566" transform="rotate(-45 2.12132 33.981)" stroke="#FF7400" stroke-width="3" />
+              <rect x="34.159" y="33.981" width="45.0566" height="45.0566" transform="rotate(-45 34.159 33.981)" stroke="#FF7400" stroke-width="3" />
+            </svg>
+          </a>
+          <address class="footer__adres">
+            <p class="footer__adres-text">г. Санкт-Петербург, ул. Фрунзе, дом 2</p>
+            <a class="footer__adres-phone" href="tel: +9998887654">+999-888-76-54</a>
+          </address>
+          <div class="footer__social">
+            <a class="footer__social-link" href="##">
+              <svg width="40" height="24" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.5958 6.85675C16.2725 6.44842 16.365 6.26675 16.5958 5.90175C16.6 5.89758 19.2692 2.20925 19.5442 0.958415L19.5458 0.957581C19.6825 0.501748 19.5458 0.166748 18.885 0.166748H16.6983C16.1417 0.166748 15.885 0.454248 15.7475 0.775915C15.7475 0.775915 14.6342 3.44092 13.0592 5.16842C12.5508 5.66758 12.3158 5.82758 12.0383 5.82758C11.9017 5.82758 11.6892 5.66758 11.6892 5.21175V0.957581C11.6892 0.410915 11.5333 0.166748 11.0725 0.166748H7.63417C7.285 0.166748 7.0775 0.421748 7.0775 0.659248C7.0775 1.17758 7.865 1.29675 7.94667 2.75508V5.91925C7.94667 6.61258 7.82083 6.74008 7.54167 6.74008C6.79833 6.74008 4.99417 4.06425 3.925 1.00175C3.70917 0.407581 3.49833 0.167581 2.9375 0.167581H0.75C0.125833 0.167581 0 0.455081 0 0.776748C0 1.34508 0.743333 4.17092 3.45667 7.90425C5.265 10.4526 7.81167 11.8334 10.1283 11.8334C11.5208 11.8334 11.6908 11.5267 11.6908 10.9992C11.6908 8.56425 11.565 8.33425 12.2625 8.33425C12.5858 8.33425 13.1425 8.49425 14.4425 9.72342C15.9283 11.1809 16.1725 11.8334 17.0042 11.8334H19.1908C19.8142 11.8334 20.13 11.5267 19.9483 10.9217C19.5325 9.64925 16.7225 7.03175 16.5958 6.85675Z" fill="#4B729F" />
+              </svg>
+            </a>
+            <a class="footer__social-link" href="##">
+              <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_7503_9583)">
+                  <path d="M13.75 0H6.25C2.79875 0 0 2.79875 0 6.25V13.75C0 17.2013 2.79875 20 6.25 20H13.75C17.2013 20 20 17.2013 20 13.75V6.25C20 2.79875 17.2013 0 13.75 0ZM18.125 13.75C18.125 16.1625 16.1625 18.125 13.75 18.125H6.25C3.8375 18.125 1.875 16.1625 1.875 13.75V6.25C1.875 3.8375 3.8375 1.875 6.25 1.875H13.75C16.1625 1.875 18.125 3.8375 18.125 6.25V13.75Z" fill="url(#paint0_linear_7503_9583)" />
+                  <path d="M10 5C7.23875 5 5 7.23875 5 10C5 12.7613 7.23875 15 10 15C12.7613 15 15 12.7613 15 10C15 7.23875 12.7613 5 10 5ZM10 13.125C8.2775 13.125 6.875 11.7225 6.875 10C6.875 8.27625 8.2775 6.875 10 6.875C11.7225 6.875 13.125 8.27625 13.125 10C13.125 11.7225 11.7225 13.125 10 13.125Z" fill="url(#paint1_linear_7503_9583)" />
+                  <path d="M15.3733 5.29124C15.7412 5.29124 16.0395 4.99295 16.0395 4.62499C16.0395 4.25703 15.7412 3.95874 15.3733 3.95874C15.0053 3.95874 14.707 4.25703 14.707 4.62499C14.707 4.99295 15.0053 5.29124 15.3733 5.29124Z" fill="url(#paint2_linear_7503_9583)" />
+                </g>
+                <defs>
+                  <linearGradient id="paint0_linear_7503_9583" x1="1.83081" y1="18.1693" x2="18.1692" y2="1.83069" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFC107" />
+                    <stop offset="0.507" stop-color="#F44336" />
+                    <stop offset="0.99" stop-color="#9C27B0" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_7503_9583" x1="6.46456" y1="13.5354" x2="13.5354" y2="6.46456" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFC107" />
+                    <stop offset="0.507" stop-color="#F44336" />
+                    <stop offset="0.99" stop-color="#9C27B0" />
+                  </linearGradient>
+                  <linearGradient id="paint2_linear_7503_9583" x1="14.9022" y1="5.09618" x2="15.8443" y2="4.15393" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFC107" />
+                    <stop offset="0.507" stop-color="#F44336" />
+                    <stop offset="0.99" stop-color="#9C27B0" />
+                  </linearGradient>
+                  <clipPath id="clip0_7503_9583">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a class="footer__social-link" href="##">
+              <svg width="30" height="27" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.84765 11.6508L7.51682 16.3041C7.99015 16.3041 8.19515 16.1008 8.44098 15.8566L10.6602 13.7358L15.2585 17.1033C16.1018 17.5733 16.696 17.3258 16.9235 16.3274L19.9418 2.1841L19.9427 2.18326C20.2102 0.936598 19.4918 0.449098 18.6702 0.754931L0.928482 7.54743C-0.282352 8.01743 -0.264019 8.69243 0.722648 8.99826L5.25848 10.4091L15.7943 3.8166C16.2901 3.48826 16.741 3.66993 16.3701 3.99826L7.84765 11.6508Z" fill="#039BE5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <a class="footer__order-link" href="##">Заказ столика</a>
+        <p class="footer__copy">(с) 2022. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
